@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    >
+
+
+    <EditText
+        android:id="@+id/etDialogSearchTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        />
+
+    <RadioGroup
+        android:id="@+id/rbGroup"
+        android:layout_below="@id/etDialogSearchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+
+
+        <RadioButton
+            android:id="@+id/RbMovies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Movies"
+            android:checked="true"
+            />
+        <RadioButton
+            android:id="@+id/RbSeries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Series"
+            />
+        <RadioButton
+            android:id="@+id/RbGames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Games"
+            />
+
+    </RadioGroup>
+
+
+</RelativeLayout>

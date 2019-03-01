@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:id="@+id/parent_layout"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:elevation="5dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/ivRightRibbon"
+                android:layout_alignParentEnd="true"
+                android:scaleType="fitXY"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ribbon"
+                />
+
+
+            <ImageView
+                android:id="@+id/ivLeftRibbon"
+                android:layout_alignParentStart="true"
+                android:scaleType="fitXY"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ribbon"
+                />
+
+
+            <ImageView
+            android:id="@+id/ivMoviePoster"
+                android:layout_toRightOf="@id/ivLeftRibbon"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+
+            />
+
+
+            <LinearLayout
+                android:layout_toRightOf="@id/ivMoviePoster"
+                android:layout_toLeftOf="@id/ivRightRibbon"
+                android:layout_marginLeft="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:id="@+id/tvMovieTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Movie Title"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingTop="2dp"
+                    />
+                <TextView
+                    android:id="@+id/tvMovieYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Year: 1997"
+                    android:textSize="10sp"
+                    android:paddingTop="5dp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/tvmovieType"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:text="movie"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:background="@drawable/type_background"
+                    android:drawableLeft="@drawable/typeimage"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

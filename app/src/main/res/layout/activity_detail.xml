@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="@color/colorPrimary"
+    >
+
+<android.support.v7.widget.CardView
+    android:background="#363636"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="50"
+    >
+
+    <ImageView
+        android:id="@+id/ivDetailPoster"
+        android:background="#363636"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="fitCenter"
+        />
+</android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/tvDetailTitle"
+        android:paddingTop="5dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title of movie/game/"
+        android:textStyle="bold"
+        android:textColor="#dcdcdc"
+        android:textSize="20sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        >
+        <TextView
+            android:id="@+id/tvDetailIMDBRating"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.5"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_rating"
+            android:textSize="12sp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/info_background"
+            />
+        <TextView
+            android:id="@+id/tvDetailDuration"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/clockxml"
+            android:text="130 mins"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/info_background"
+            />
+
+        <TextView
+            android:id="@+id/tvDetailYear"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2011"
+            android:drawableLeft="@drawable/calendarxml"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/info_background"
+            />
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDetailIMDBRating"
+            android:textStyle="bold"
+            android:textColor="#dcdcdc"
+            android:layout_marginTop="5dp"
+            android:text="About: "
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/about"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                android:id="@+id/tvDetailPlot"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#efefef"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textAlignment="inherit"
+
+
+                />
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
